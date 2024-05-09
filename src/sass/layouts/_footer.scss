@@ -1,11 +1,7 @@
-.container-conp-padding {
-    // @include desctop {
-    // padding-left: 16px;
-    //     padding-right: 16px;
-    // }
-}
+
 .footer-container {
     padding-bottom: 0;
+    padding-top: 0;
 
     @include desctop {
         padding-bottom: 60px;
@@ -17,6 +13,7 @@
 
     @include desctop {
         justify-content: space-between;
+        margin-top: 60px;
     }
 }
 
