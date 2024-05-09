@@ -2,21 +2,21 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://PlushSalmon.github.io/team-number-three-html-css",
+  // "homepage": "https://PlushSalmon.github.io/team-number-three-html-css",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /team-number-three-html-css/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
-  },
+  // "repository": {
+  //   "type": "git",
+  //   "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+  // },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
-  },
+  // "bugs": {
+  //   "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  // },
   "dependencies": {
     "modern-normalize": "^1.1.0"
   },
