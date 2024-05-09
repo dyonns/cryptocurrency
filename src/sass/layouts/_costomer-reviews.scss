@@ -10,9 +10,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  @include mobile {
-    background-image: url('../images/review/icecream-reviews_bg_mobile.png');
-  }
+  background-image: url('../images/review/icecream-reviews_bg_mobile.png');
+  
   @include tablet {
     background-image: url('../images/review/icecream-reviews_bg_tablet.png');
   }
@@ -28,10 +27,10 @@
 .container-gallery {
   margin: 0 auto;
   width: 320px;
-  padding: 0 20px 94px 20px;
+  padding: 0 20px 0px 20px;
   @include tablet {
     width: 768px;
-    padding: 0 32px 94px 20px;
+    padding: 0 32px 0px 20px;
   }
   @include desctop {
     width: 1200px;
@@ -52,14 +51,14 @@
 .container__review {
   margin: 0 auto;
   width: 320px;
-  padding: 50 20px 40px 20px;
+  padding: 50 20px 417px 20px;
   @include tablet {
     width: 768px;
-    padding: 50 32px 50px 32px;
+    padding: 50 32px 329px 32px;
   }
   @include desctop {
     width: 1200px;
-    padding: 70 116px 70px 117px;
+    padding: 70 116px 270px 117px;
   }
 }
 

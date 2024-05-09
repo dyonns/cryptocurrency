@@ -19,14 +19,14 @@
 
 <body>
   <include src="./partials/header-hero.html"></include>
-  <include src="./partials/products.html"></include>
+  <!-- <include src="./partials/products.html"></include>
   <include src="./partials/about.html"></include>
   <include src="./partials/advantages.html"></include>
   <!-- <include src="./partials/gallery.html"></include> -->
   <include src="./partials/costomer-reviews.html"></include>
   <include src="./partials/contacts.html"></include>
-  <include src="./partials/footer.html"></include>
-  <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+  <include src="./partials/footer.html"></include> -->
+  <!-- <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper', {
@@ -38,6 +38,18 @@
       },
     });
   </script>  
+  <script>
+    $(document).ready(function () {
+      PopUpHide();
+    });
+    function PopUpShow() {
+      $("#popup-products").show();
+    }
+    function PopUpHide() {
+      $("#popup-products").hide();
+    }
+  </script>
+
 </body>
 
 </html>

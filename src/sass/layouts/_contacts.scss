@@ -1,3 +1,30 @@
+.container-pos {
+    position: relative;
+
+}
+
+.container-pos-address {
+    font-style: normal;
+    position: absolute;
+    top: 290px;
+    left: 50%;
+
+    font-weight: 500;
+    
+
+    transform: translate(-50%, -50%);
+
+    @include tablet {
+        top: 70px;
+        padding-bottom: 40px;
+    }
+
+    @include desctop {
+        top: 200px;
+        padding-bottom: 120px;
+    }
+}
+
 .contacts-box-list {
     display: flex;
     gap: 16px;
@@ -15,18 +42,22 @@
 }
 
 .contacts-box-item {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     background-color: #FCFCFC;
     border-radius: 24px;
     padding: 40px 32px 24px 32px;
     @include calc(1, 16px);
     height: 412px;
+    width: 280px;
 
     @include tablet {
         height: 537px;
+        width: 224px;
     }
 
     @include desctop {
         height: 542px;
+        width: 368px;
     }
 }
 
@@ -69,10 +100,11 @@
 .physical-adress {
     @include font (500, 12px, calc(22 / 12), 0.04em);
     color: #D6936D;
-    margin-bottom: 24px;
+    padding-bottom: 24px;
 
     @include tablet {
         @include font (500, 14px, calc(26 / 14), 0.04em);
+        padding-bottom: 32px;
     }
 
     @include desctop {
@@ -85,6 +117,11 @@
     border-bottom: 1px solid #E1E1E1;
     padding-top: 24px;
     padding-bottom: 24px;
+
+    @include tablet {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 .contacts-day {
@@ -120,14 +157,16 @@
 .contacts-tel {
     @include font (500, 12px, calc(19 / 12), null);
     color: #131313;
-    margin-top: 24px;
+    padding-top: 24px;
 
     @include tablet {
         @include font (500, 14px, calc(21 / 114), null);
+        padding-top: 32px;
     }
 
     @include desctop {
         @include font (500, 16px, calc(24 / 16), null);
+        padding-top: 32px;
     }
 }
 
@@ -151,15 +190,20 @@
     padding-left: 62px;
     padding-right: 62px;
     gap: 16px;
+
+    padding-top: 900px;
+
     @include tablet {
-            padding-left: 180px;
-                padding-right: 180px;
-                flex-direction: row;
-                justify-content: center;
+    padding-left: 180px;
+        padding-right: 180px;
+        flex-direction: row;
+        justify-content: center;
+    padding-top: 278px;
     }
     @include desctop {
         padding-left: 396px;
-            padding-right: 396px;
+        padding-right: 396px;
+        padding-top: 370px;
     }
 }
 
