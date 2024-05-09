@@ -5,22 +5,27 @@
     openModalBtn: document.querySelector("[data-modal-open]"),
     closeModalBtn: document.querySelector("[data-modal-close]"),
     modal: document.querySelector("[data-modal]"),
-    body: document.querySelector('body'),
-    menuList: document.querySelector('.header__nav-hide')
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
-  refs.menuList.addEventListener('click', removeMenu);
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
   }
-
-  function removeMenu() {
-    refs.modal.classList.toggle("is-hidden");
-  }
 })();
+
+// ------Pop-Up------
+
+    $(document).ready(function () {
+      PopUpHide();
+    });
+    function PopUpShow() {
+      $("#popup-products").show();
+    }
+    function PopUpHide() {
+      $("#popup-products").hide();
+    }
 
 // ------Pop Up 2-----
 
