@@ -1,8 +1,6 @@
 {
   "name": "parcel-project-template",
   "version": "2.0.0",
-  "description": "",
-  "homepage": "https://dyonns.github.io/cryptocurrency",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /team-number-three-html-css/"
