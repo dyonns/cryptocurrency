@@ -22,6 +22,18 @@
   }
 })();
 
+// ------Pop-Up------
+
+$(document).ready(function () {
+  PopUpHide();
+});
+function PopUpShow() {
+  $('#popup-products').show();
+}
+function PopUpHide() {
+  $('#popup-products').hide();
+}
+
 // ------Pop Up 2-----
 
 (() => {
