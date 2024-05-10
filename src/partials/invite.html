@@ -1,0 +1,44 @@
+<!-- The button that triggers the modal window -->
+<div class="invite">
+  <button id="open-modal" aria-label="Open modal window">Open Modal</button>
+</div>
+<!-- The modal window -->
+<div
+  id="modal"
+  class="modal"
+  role="dialog"
+  aria-labelledby="modal-title"
+  aria-describedby="modal-content"
+>
+  <!-- Modal content -->
+  <div class="modal-content">
+    <button id="close-modal" aria-label="Close modal window">X</button>
+    <h2 id="modal-title" class="modal__heading">Join our team!</h2>
+    <form class="form">
+      <label for="email" class="label">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="input"
+        required
+      /><br /><br />
+      <label for="message" class="label">Message:</label>
+      <textarea id="message" name="message" class="input" required></textarea
+      ><br /><br />
+      <input type="submit" value="Send" class="input__submit" />
+    </form>
+  </div>
+</div>
+<!-- JavaScript code to toggle the modal window -->
+<script>
+  const openModalButton = document.getElementById('open-modal');
+  const modal = document.getElementById('modal');
+  const closeModalButton = document.getElementById('close-modal');
+  openModalButton.addEventListener('click', () => {
+    modal.classList.add('show');
+  });
+  closeModalButton.addEventListener('click', () => {
+    modal.classList.remove('show');
+  });
+</script>
