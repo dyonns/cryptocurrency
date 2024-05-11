@@ -1,0 +1,36 @@
+<!-- Add a container for the button -->
+<div class="scroll-top-container">
+  <div class="scroll-top-btn">
+    <svg class="arrows">
+      <path class="a1" d="M0 72 L30 40 L60 72"></path>
+      <path class="a2" d="M0 52 L30 20 L60 52"></path>
+      <path class="a3" d="M0 32 L30 0 L60 32"></path>
+    </svg>
+  </div>
+</div>
+
+<script>
+  const scrollTopContainer = document.querySelector('.scroll-top-container');
+  const tabs = document.querySelectorAll('.about, .products, .invite');
+  const navButtons = document.querySelectorAll('.products-btn');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      document.body.classList.add('scrolled');
+    } else {
+      document.body.classList.remove('scrolled');
+    }
+  });
+
+  navButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const tab = button.getAttribute('data-tab');
+      if (tab === 'about' || tab === 'products' || tab === 'invite') {
+        document.body.classList.add(`on-${tab}`);
+      }
+    });
+  });
+
+  scrollTopContainer.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>

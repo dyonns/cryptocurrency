@@ -4,6 +4,20 @@
   right: 20px;
 }
 
+.invite-icon {
+  display: block;
+  fill: #f8d24e;
+  height: 15px;
+  width: 50px;
+}
+
+.open__button{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .modal {
   position: absolute;
   // top: 0;
@@ -20,7 +34,7 @@
 .modal-content {
   max-width: 300px;
   position: fixed;
-  bottom: 40px;
+  bottom: 20px;
   right: 20px;
 
   background-color: #f9f9f9;

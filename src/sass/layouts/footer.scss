@@ -1,0 +1,40 @@
+.foot-comp-descwrap {
+    @include desctop {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.footer-company-container {
+    border-top: 1px solid #E1E1E1;
+}
+
+.footer-company {
+    padding: 20px;
+
+    @include tablet {
+        padding: 12px;
+    }
+}
+
+.footer-text-company {
+    @include font (700, 14px, calc(21 / 14), null);
+    text-align: center;
+    color: #7A7A7A;
+
+    @include tablet {
+        @include font (700, 14px, calc(26 / 14), 0.02em);
+    }
+
+    @include desctop {
+        @include font (700, 12px, calc(22 / 12), 0.02em);
+    }
+}
+
+.second-part-text {
+    display: block;
+
+    @include tablet {
+        display: inline;
+    }
+}
