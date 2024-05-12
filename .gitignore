@@ -1,7 +1,11 @@
+package-lock.json
+
+
 #Junk
 .DS_Store
 .vscode/
 .idea/
+
 
 # Logs
 logs

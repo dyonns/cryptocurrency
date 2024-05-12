@@ -1,6 +1,5 @@
 // background
 .donation {
-
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -26,24 +25,47 @@
     font-size: 1.5em;
     line-height: 1.25;
     font-weight: 400;
-
-    
-
-    // @include tablet {
-    //     padding-bottom: 24px;
-    // }
-
-    // @include desctop {
-    //     font-size: 38px;
-    //     line-height: calc(48 / 38);
-    // }
 }
 
 .donation__description {
-    padding-bottom: 350px;
+    padding-bottom: 150px;
     color: #FFFFFF;
     font-family: 'Source Code Pro', monospace;
     font-size: 1em;
     line-height: 1.75;
     font-weight: 400;
+}
+
+
+.container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px solid #b60a0a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.btn-pay {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-pay:hover {
+    background-color: #3e8e41;
 }

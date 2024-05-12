@@ -1,10 +1,63 @@
 <div class="donation" id="donation">
-    <section>
-        <div class="donation__placing">
-                <h1 class="donation__title">Donations</h1>
-                <p class="donation__description">
-                    Here you can support our team and make a small contribution to its development.
-                </p>
-        </div>
-    </section>
+  <section>
+    <div class="donation__placing">
+      <h1 class="donation__title">Donations</h1>
+
+      <div class="container">
+        <h2>Payment System</h2>
+        <form id="payment-form">
+          <input
+            type="number"
+            id="price"
+            class="form-control"
+            placeholder="Enter price"
+          />
+          <button class="btn-pay" id="pay-btn">Pay</button>
+          <p id="payment-status"></p>
+        </form>
+      </div>
+
+      <p class="donation__description">
+        Here you can support our team and make a small contribution to its
+        development.
+      </p>
+    </div>
+  </section>
 </div>
+
+<script>
+  const paymentForm = document.getElementById('payment-form');
+  const payBtn = document.getElementById('pay-btn');
+  const paymentStatus = document.getElementById('payment-status');
+
+  payBtn.addEventListener('click', e => {
+    e.preventDefault();
+    const price = document.getElementById('price').value;
+    if (price > 0) {
+      // Send payment request to server
+      fetch('/pay', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          price: price,
+          cardNumber: '4242-4242-4242-4242',
+        }),
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            paymentStatus.textContent = `Payment successful!`;
+          } else {
+            paymentStatus.textContent = `Payment failed: ${data.error}`;
+          }
+        })
+        .catch(error => {
+          paymentStatus.textContent = `Payment failed: ${error.message}`;
+        });
+    } else {
+      paymentStatus.textContent = 'Please enter a valid price';
+    }
+  });
+</script>
